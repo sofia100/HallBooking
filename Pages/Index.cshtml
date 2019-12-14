@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <br />
+        <br />
+        <form action="action_page.php" method="post">
+           
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <br />
+                <br />
+                <label for="psw"><b>Password</b></label>&nbsp;
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br />
+                <br />
+                <button type="submit">Login as User </button>
+
+                &nbsp;&nbsp;&nbsp;
+
+                <button type="submit">Login as Approver</button>
+
+            </div>
+
+          
+        </form>
+    </div>
